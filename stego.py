@@ -6,9 +6,6 @@ import random
 class NotEnoughValuesException(Exception):
     pass
 
-class InvalidImageEncodingException(Exception):
-    pass
-
 def write_bit(pixels, bit: int, location: Tuple[int, int, int], verbose=False):
     x, y, channel = location
     if verbose: print("Wrote bit {} at {}, {}, {}".format(bit, x, y, channel))
